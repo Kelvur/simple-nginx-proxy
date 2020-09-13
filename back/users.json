@@ -1,0 +1,15 @@
+{
+    "data": [{
+        "name": "Frank Herbert",
+        "book": "Dune"
+    }, {
+        "name": "Isaac Asimov",
+        "book": "Fundation"
+    }, {
+        "name": "George Orwell",
+        "book": "1984"
+    }, {
+        "name": "Ernest Cline",
+        "book": "Ready Player One"
+    }]
+}
