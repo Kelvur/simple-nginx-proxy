@@ -1,4 +1,3 @@
-const { request } = require('express')
 // Core
 const express = require('express')
 // Data
