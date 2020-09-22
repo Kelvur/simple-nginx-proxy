@@ -1,0 +1,9 @@
+.newUserForm {
+    display: flex;
+    justify-content: center;
+}
+
+.newUserFormForm {
+    display: flex;
+    flex-direction: column;
+}

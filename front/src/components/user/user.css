@@ -1,0 +1,13 @@
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userName{
+    font-weight: bold;
+}
+
+.userBook{
+    color: #777777;
+}
