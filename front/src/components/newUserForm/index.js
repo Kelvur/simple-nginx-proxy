@@ -14,14 +14,14 @@ export function renderNewUserForm(callback, parentNode){
     //         <button type="submit">Submit</button>
     //     </form>
     // </div>
-    const div = createElement('div', {name: 'className', value: 'newUserForm'}, undefined, parentNode)
-    const form = createElement('form', [{name: 'action', value: '#'}, {name: 'className', value: 'newUserFormForm'}], undefined, div)
+    const div = createElement('div', {className: 'newUserForm'}, undefined, parentNode)
+    const form = createElement('form', {action: '#', className: 'newUserFormForm'} , undefined, div)
     new Array('Name', 'Book').forEach(value => {
         const key = value.toLocaleLowerCase();
-        createElement('label', {name: 'for', value: key}, value, form)
-        createElement('input', [{name: 'name', value: key}, {name: 'type', value: 'text'}], undefined, form)
+        createElement('label', {for: key}, value, form)
+        createElement('input', {name: key, type: 'text'}, undefined, form)
     })
-    createElement('button', {name: 'type', value: 'submit'}, 'Submit', form)
+    createElement('button', {type: 'submit'}, 'Submit', form)
     form.addEventListener('submit', (evt) => {
         evt.preventDefault()
         callback(evt, {

@@ -9,9 +9,9 @@ export function renderUser(user, parentNode){
     //     <h3 className="userName">{user.name}</h3>
     //     <span className="userBook">{user.book}</span>
     // </div>
-    const div = createElement('div', {name: 'className', value: 'user'}, '', parentNode)
-    createElement('h3', {name: 'className', value: 'userName'}, user.name, div)
-    createElement('span', {name: 'className', value: 'userBook'}, user.book, div)
+    const div = createElement('div', {className: 'user'}, undefined, parentNode)
+    createElement('h3', {className: 'userName'}, user.name, div)
+    createElement('span', {className: 'userBook'}, user.book, div)
 }
 
 export function removeUsers(parentNode){

@@ -1,11 +1,9 @@
 
-export function createElement(element, attribute, text, parent){
+export function createElement(element, attributes, text, parent){
     const node = document.createElement(element)
-    if(Array.isArray(attribute)){
-        attribute.forEach(attr => node[attr.name] = attr.value)
-    } else {
-        node[attribute.name] = attribute.value
-    }
+    Object.keys(attributes).forEach(key => {
+        node[key] = attributes[key];
+    })
     if(text) node.innerText = text
     parent.appendChild(node)
     return node
