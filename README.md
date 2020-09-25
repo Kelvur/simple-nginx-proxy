@@ -27,6 +27,11 @@ I will use **Nginx** to resolve the problem
 
 ### Install Nginx
 
+> Note: this guide is based in Ubuntu 18.04
+> 
+> Some steps can differ, in your OS
+
+
 First check for updates
 
 ```bash
