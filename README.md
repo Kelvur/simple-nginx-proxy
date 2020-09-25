@@ -1,6 +1,5 @@
 # Simple Nginx Proxy <!-- omit in toc -->
 - [The Problem](#the-problem)
-- [What I Want](#what-i-want)
 - [The Solution](#the-solution)
   - [Install Nginx](#install-nginx)
   - [Choose a Domain Name](#choose-a-domain-name)
@@ -19,29 +18,6 @@
 ## The Problem
 
 Lets say you have one or more fronts and backs to deploy but you don't deploy them in the same port or in the same URL. But, you want to put them under the same URL (to avoid [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), or other reason). That is the problem.
-
-
-## What I Want
-
-**Front:** Make the front point the calls to some objetive URL or make them relative of where the front is deployed. Example:
-
-```bash
-# The first option is commonly accomplished doing something like this:
-BASE_URL="www.example.com/api/" npm run build
-
-# Now when the front make a call, for example to get the users, will be something like this:
-# GET www.example.com/api/users
-```
-
-```js
-// The second option is when the calls of the front don't point to any domain, just to some path
-fetch('/api/users', { method: 'GET' })
-
-// The fetch will be relative to the domain, if for example the front is deployed in www.wikiexample.com
-// the call will be to www.wikiexample.com/api/users
-```
-
-**Back:** Deploy the back to any port, all the traffic under the path `/api` will be redirected to the correct port.
 
 
 ## The Solution
