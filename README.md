@@ -129,6 +129,8 @@ listen [::]:80 default_server;
 By this: 
 
 ```nginx
+# By default the HTTP port is 80, so when you type a URL in your browser
+# by default it will go to ask to the 80 port of the server 
 listen 80;
 ```
 
@@ -141,6 +143,7 @@ root /var/www/html;
 By this:
 
 ```nginx
+# The folder /var/www usually contains the web pages in linux
 root /var/www/${DOMAIN_NAME};
 ```
 
