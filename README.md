@@ -171,6 +171,23 @@ location /api/ {
 }
 ```
 
+That is all, the file should look something like this:
+
+```nginx
+server {
+	listen 80;
+
+	root /var/www/${DOMAIN_NAME};
+
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name ${DOMAIN_NAME} www.${DOMAIN_NAME};
+
+	location /api/ {
+		proxy_pass http://localhost:3000/;
+	}
+}
+```
 
 ### Enable the site
 
