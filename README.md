@@ -8,6 +8,7 @@
   - [Web Folder](#web-folder)
   - [Copy the Builded Front](#copy-the-builded-front)
   - [Configure Nginx](#configure-nginx)
+  - [Enable the site](#enable-the-site)
 - [Nginx Service](#nginx-service)
   - [Start The Service](#start-the-service)
   - [Stop The Service](#stop-the-service)
@@ -166,6 +167,19 @@ location /api/ {
         proxy_pass http://localhost:3000/;
 }
 ```
+
+
+### Enable the site
+
+In this moment `nginx` has created the site, but you has to enable it.
+
+Execute:
+
+```bash
+cd /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/${DOMAIN_NAME}
+```
+
 
 ## Nginx Service
 
