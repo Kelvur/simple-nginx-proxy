@@ -22,7 +22,7 @@ Lets say you have one or more fronts and backs to deploy but you don't deploy th
 
 ## The Solution
 
-I will use **Nginx** to resolve the problem
+I will use **Nginx** to solve this problem
 
 
 ### Install Nginx
@@ -208,7 +208,7 @@ How to test:
 
 ### Add a Record to `hosts`
 
-If you don't want to test this configuration without going to the DNS Server to point to the choosed domain name, you can add a new line to the dile `host`. Example:
+If you don't want to test this configuration without going to the DNS Server to point to the choosed domain name, you can add a new line to the file `host`. Example:
 
 ```bash
 cd /etc
