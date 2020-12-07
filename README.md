@@ -59,7 +59,7 @@ If you want you can use the back provided by this repository, go to the folder `
 
 ```bash
 npm i # Install dependencies
-# You have more options listend in the README of the back
+# You have more options listed in the README of the back
 npm start
 ```
 
@@ -72,7 +72,7 @@ If you want you can use the front provided by this repository, go to the folder 
 
 ```bash
 npm i # Install dependencies
-# You have more options listend in the README of the front
+# You have more options listed in the README of the front
 npm run build
 # the builded front it's located in the dist folder
 ```
