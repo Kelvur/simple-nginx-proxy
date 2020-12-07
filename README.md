@@ -30,7 +30,7 @@ I will use **Nginx** to solve this problem
 
 > Note: this guide is based in Ubuntu 18.04
 > 
-> Some steps can differ, in your OS
+> Some steps may differ, in your OS
 
 
 First check for updates
